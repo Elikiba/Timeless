@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Title and Description -->
+    <title>Luxury Hotel | Timeless Luxury Benin City</title>
+    <meta name="description" content="Experience ultimate luxury at our premium hotel in Benin City. World-class suites, exceptional amenities, and personalized service await." />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">TL</div>
+            <h2>Timeless Luxury</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Timeless Luxury</a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="menu-bar top-bar"></span>
+                <span class="menu-bar middle-bar"></span>
+                <span class="menu-bar bottom-bar"></span>
+            </button>
+            <nav id="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooftop.html">Rooftop Bar</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="lounge.html">Lounge</a></li>
+                    <li><a href="club.html">Club</a></li>
+                    <li><a href="hotel.html" style="color: var(--gold);">Hotel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hotel Hero Section -->
+    <section class="rooms-hero">
+        <img src="assets/rooms/room-1.webp" alt="Luxury Hotel Suite">
+        <div class="rooms-hero-overlay"></div>
+        <div class="rooms-hero-content">
+            <h1>Luxury Hotel Suites</h1>
+            <p>Indulge in world-class accommodations where elegance meets comfort</p>
+        </div>
+    </section>
+
+    <!-- Hotel About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Exceptional Hospitality</h2>
+                <p>Where luxury meets comfort in perfect harmony</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our hotel represents the pinnacle of luxury accommodation in Benin City. Each suite is meticulously designed to provide guests with an extraordinary experience that seamlessly blends elegance, comfort, and modern sophistication.</p>
+                    
+                    <p>From our premium amenities to our personalized concierge service, every detail has been carefully considered to ensure your stay exceeds all expectations. Whether visiting for business or leisure, our hotel provides the perfect sanctuary.</p>
+                    
+                    <p>Experience unparalleled views, world-class dining, and exceptional service that defines true luxury hospitality in Nigeria's most vibrant city.</p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="assets/rooms/room-2.webp" alt="Hotel Luxury Suite">
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">50</div>
+                    <div class="stat-label">Luxury Suites</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Concierge Service</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Star Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Guest Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="rooms-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Exquisite Suites</h2>
+            </div>
+            <p class="section-subtitle">Each room is meticulously designed to provide the ultimate in luxury and comfort, featuring premium amenities and stunning city views.</p>
+            
+            <div class="snap-carousel-container">
+                <button class="carousel-nav prev" aria-label="Previous room">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="snap-carousel">
+                    <!-- Presidential Suite -->
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('assets/rooms/room-1.webp')"></div>
+                        <div class="room-info">
+                            <h3>Presidential Suite</h3>
+                            <div class="room-features">
+                                <span><i class="fas fa-bed"></i> King Size Bed</span>
+                                <span><i class="fas fa-bath"></i> Luxury Bathroom</span>
+                                <span><i class="fas fa-tv"></i> Smart TV</span>
+                                <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                                <span><i class="fas fa-car"></i> Valet Parking</span>
+                                <span><i class="fas fa-concierge-bell"></i> 24/7 Service</span>
+                            </div>
+                            <div class="room-price">₦150,000 per night</div>
+                            <div class="btn-container">
+                                <button class="btn btn-primary view-tour-btn">Virtual Tour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Executive Suite -->
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('assets/rooms/room-2.webp')"></div>
+                        <div class="room-info">
+                            <h3>Executive Suite</h3>
+                            <div class="room-features">
+                                <span><i class="fas fa-bed"></i> Queen Size Bed</span>
+                                <span><i class="fas fa-bath"></i> Premium Bathroom</span>
+                                <span><i class="fas fa-tv"></i> Smart TV</span>
+                                <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                                <span><i class="fas fa-dumbbell"></i> Gym Access</span>
+                                <span><i class="fas fa-swimming-pool"></i> Pool Access</span>
+                            </div>
+                            <div class="room-price">₦95,000 per night</div>
+                            <div class="btn-container">
+                                <button class="btn btn-primary view-tour-btn">Virtual Tour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deluxe Suite -->
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('assets/rooms/room-3.webp')"></div>
+                        <div class="room-info">
+                            <h3>Deluxe Suite</h3>
+                            <div class="room-features">
+                                <span><i class="fas fa-bed"></i> King Size Bed</span>
+                                <span><i class="fas fa-bath"></i> Modern Bathroom</span>
+                                <span><i class="fas fa-tv"></i> LED TV</span>
+                                <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                                <span><i class="fas fa-coffee"></i> Mini Bar</span>
+                                <span><i class="fas fa-utensils"></i> Room Service</span>
+                            </div>
+                            <div class="room-price">₦75,000 per night</div>
+                            <div class="btn-container">
+                                <button class="btn btn-primary view-tour-btn">Virtual Tour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Suite -->
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('assets/rooms/fam-room.webp')"></div>
+                        <div class="room-info">
+                            <h3>Family Suite</h3>
+                            <div class="room-features">
+                                <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                                <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                                <span><i class="fas fa-tv"></i> Multiple TVs</span>
+                                <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+                                <span><i class="fas fa-couch"></i> Living Area</span>
+                                <span><i class="fas fa-utensils"></i> Kitchenette</span>
+                            </div>
+                            <div class="room-price">₦120,000 per night</div>
+                            <div class="btn-container">
+                                <button class="btn btn-primary view-tour-btn">Virtual Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-nav next" aria-label="Next room">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="rooms-preview-cta">
+                <a href="#booking" class="btn btn-outline">Book Your Stay</a>
+                <p class="cta-subtext">Experience luxury like never before. Reserve your perfect suite today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Amenities Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hotel Amenities</h2>
+                <p>World-class facilities designed for your comfort and convenience</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/spa/spa-1.webp" alt="Spa Services">
+                    <div class="service-overlay">
+                        <h3>Luxury Spa</h3>
+                        <p>Rejuvenate your body and mind with our premium spa treatments and wellness services.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/gym/gym-1.webp" alt="Fitness Center">
+                    <div class="service-overlay">
+                        <h3>Fitness Center</h3>
+                        <p>State-of-the-art equipment and personal training services available 24/7.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/business/business-1.webp" alt="Business Center">
+                    <div class="service-overlay">
+                        <h3>Business Center</h3>
+                        <p>Fully equipped meeting rooms and conference facilities for all your business needs.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/concierge/concierge-1.webp" alt="Concierge Service">
+                    <div class="service-overlay">
+                        <h3>Concierge Service</h3>
+                        <p>Our dedicated concierge team ensures every detail of your stay is perfectly managed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section" id="booking">
+        <div class="container">
+            <h2 class="form-title">Reserve Your Suite</h2>
+            
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">
+                            <i class="fas fa-user"></i> Full Name
+                        </label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Email Address
+                        </label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone"></i> Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="roomType">
+                            <i class="fas fa-bed"></i> Room Type
+                        </label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="">Select Room Type</option>
+                            <option value="presidential">Presidential Suite - ₦150,000</option>
+                            <option value="executive">Executive Suite - ₦95,000</option>
+                            <option value="deluxe">Deluxe Suite - ₦75,000</option>
+                            <option value="family">Family Suite - ₦120,000</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="date-picker-group">
+                        <label for="checkIn">
+                            <i class="fas fa-calendar-alt"></i> Check-in Date
+                        </label>
+                        <div class="flatpickr-wrapper">
+                            <i class="fas fa-calendar-alt flatpickr-icon"></i>
+                            <input type="text" id="checkIn" name="checkIn" placeholder="Select check-in date" class="flatpickr-input" required readonly>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="date-picker-group">
+                        <label for="checkOut">
+                            <i class="fas fa-calendar-alt"></i> Check-out Date
+                        </label>
+                        <div class="flatpickr-wrapper">
+                            <i class="fas fa-calendar-alt flatpickr-icon"></i>
+                            <input type="text" id="checkOut" name="checkOut" placeholder="Select check-out date" class="flatpickr-input" required readonly>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">
+                        <i class="fas fa-users"></i> Number of Guests
+                    </label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5+">5+ Guests</option>
+                    </select>
+                    <div class="error-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialRequests">
+                        <i class="fas fa-comment"></i> Special Requests (Optional)
+                    </label>
+                    <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special requests or dietary requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Reserve Now
+                </button>
+                
+                <div class="form-success" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Booking request submitted successfully! We'll contact you shortly to confirm your reservation.</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Overlay -->
+    <div class="virtual-tour-overlay" id="virtualTourOverlay">
+        <div class="virtual-tour-container">
+            <img src="assets/rooms/room-1.webp" alt="Room Tour" class="tour-image" id="tourImage">
+            <div class="tour-controls">
+                <button class="tour-prev" id="tourPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="tour-progress" id="tourProgress">1/6</span>
+                <button class="tour-next" id="tourNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <button class="close-tour" id="closeTour">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2347086137054" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Timeless Luxury</h3>
+                    <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin City, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
+                    <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <p><a href="hotel.html">Luxury Hotel</a></p>
+                    <p><a href="lounge.html">Elegant Lounge</a></p>
+                    <p><a href="club.html">Club Timeless</a></p>
+                    <p><a href="rooftop.html">Rooftop Bar</a></p>
+                    <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Timeless Luxury | Designed by Elikiba&trade;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
