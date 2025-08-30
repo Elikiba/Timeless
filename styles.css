@@ -1,3 +1,20 @@
+/* Responsive About Images */
+.about-img-lg {
+    display: block;
+}
+.about-img-sm {
+    display: none;
+}
+@media (max-width: 768px) {
+    .about-img-lg {
+        display: none;
+    }
+    .about-img-sm {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
 :root {
     --gold: #FFDF00;
     --dark-gold: #B8860B;
@@ -1394,13 +1411,17 @@ footer {
     justify-content: center;
 }
 
+.social-links i {
+    font-size: 1.4rem;
+}
+
 .social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: var(--gold);
+    background: transparent;
     color: var(--dark);
     border-radius: 50%;
     transition: var(--transition);

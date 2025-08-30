@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- Favicon -->
-        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwMjAzMzUiLz4KPHN2ZyB4PSIxNiIgeT0iMTYiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4KPHN0YXIgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9IiNGRkRGMDAiLz4KPHN0YXIgY3g9IjEyIiBjeT0iNiIgcj0iMiIgZmlsbD0iI0ZGREYwMCIvPgo8c3RhciBjeD0iMTIiIGN5PSIxOCIgcj0iMiIgZmlsbD0iI0ZGREYwMCIvPgo8c3RhciBjeD0iNiIgY3k9IjEyIiByPSIyIiBmaWxsPSIjRkZERjAwIi8+CjxzdGFyIGN4PSIxOCIgY3k9IjEyIiByPSIyIiBmaWxsPSIjRkZERjAwIi8+CjxzdGFyIGN4PSI4LjIiIGN5PSI4LjIiIHI9IjEuNSIgZmlsbD0iI0ZGREYwMCIvPgo8c3RhciBjeD0iMTUuOCIgY3k9IjguMiIgcj0iMS41IiBmaWxsPSIjRkZERjAwIi8+CjxzdGFyIGN4PSI4LjIiIGN5PSIxNS44IiByPSIxLjUiIGZpbGw9IiNGRkRGMDAiLz4KPHN0YXIgY3g9IjE1LjgiIGN5PSIxNS44IiByPSIxLjUiIGZpbGw9IiNGRkRGMDAiLz4KPC9zdmc+Cjwvc3ZnPgo=" />
-        <!-- SEO Title and Description -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="media/logo.png" />
+
+    <!-- SEO Title and Description -->
     <title>Luxury Hotel | Timeless Luxury Benin City</title>
     <meta name="description" content="Experience ultimate luxury at our premium hotel in Benin City. World-class suites, exceptional amenities, and personalized service await." />
     
@@ -16,18 +18,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
+    <!-- Luxury Preloader -->
+    <div class="preloader">
         <div class="preloader-content">
-            <div class="preloader-logo">TL</div>
-            <h2>Timeless Luxury</h2>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
+            <div class="luxury-logo-container">
+                <div class="luxury-crown">
+                    <div class="crown-jewel crown-jewel-1"></div>
+                    <div class="crown-jewel crown-jewel-2"></div>
+                    <div class="crown-jewel crown-jewel-3"></div>
+                    <div class="crown-base"></div>
+                </div>
+                <h1 class="preloader-logo">Timeless Luxury</h1>
             </div>
+            <div class="luxury-tagline">Timeless Hotel</div>
+            <div class="luxury-loading">
+                <div class="loading-diamonds">
+                    <div class="diamond"></div>
+                    <div class="diamond"></div>
+                    <div class="diamond"></div>
+                </div>
+                <div class="loading-text">Loading your luxury experience...</div>
+            </div>
+        </div>
+        <div class="preloader-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
         </div>
     </div>
 
@@ -55,7 +76,7 @@
 
     <!-- Hotel Hero Section -->
     <section class="rooms-hero">
-        <img src="assets/rooms/room-1.webp" alt="Luxury Hotel Suite">
+    <img src="media/rp-7.jpg" alt="Luxury Hotel Suite">
         <div class="rooms-hero-overlay"></div>
         <div class="rooms-hero-content">
             <h1>Luxury Hotel Suites</h1>
@@ -74,14 +95,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>Our hotel represents the pinnacle of luxury accommodation in Benin City. Each suite is meticulously designed to provide guests with an extraordinary experience that seamlessly blends elegance, comfort, and modern sophistication.</p>
-                    
                     <p>From our premium amenities to our personalized concierge service, every detail has been carefully considered to ensure your stay exceeds all expectations. Whether visiting for business or leisure, our hotel provides the perfect sanctuary.</p>
-                    
                     <p>Experience unparalleled views, world-class dining, and exceptional service that defines true luxury hospitality in Nigeria's most vibrant city.</p>
                 </div>
-                
                 <div class="about-image">
-                    <img src="assets/rooms/room-2.webp" alt="Hotel Luxury Suite">
+                    <img src="media/rp-8.jpg" alt="Hotel Luxury Suite" class="about-img-lg">
+                    <img src="media/rp-9.jpg" alt="Hotel Luxury Suite Small" class="about-img-sm">
                 </div>
             </div>
 
@@ -121,7 +140,7 @@
                 <div class="snap-carousel">
                     <!-- Presidential Suite -->
                     <div class="room-card">
-                        <div class="room-image" style="background-image: url('assets/rooms/room-1.webp')"></div>
+                        <div class="room-image" style="background-image: url('media/rp-9.jpg')"></div>
                         <div class="room-info">
                             <h3>Presidential Suite</h3>
                             <div class="room-features">
@@ -141,7 +160,7 @@
 
                     <!-- Executive Suite -->
                     <div class="room-card">
-                        <div class="room-image" style="background-image: url('assets/rooms/room-2.webp')"></div>
+                        <div class="room-image" style="background-image: url('media/rp-10.jpg')"></div>
                         <div class="room-info">
                             <h3>Executive Suite</h3>
                             <div class="room-features">
@@ -161,7 +180,7 @@
 
                     <!-- Deluxe Suite -->
                     <div class="room-card">
-                        <div class="room-image" style="background-image: url('assets/rooms/room-3.webp')"></div>
+                        <div class="room-image" style="background-image: url('media/rp-11.jpg')"></div>
                         <div class="room-info">
                             <h3>Deluxe Suite</h3>
                             <div class="room-features">
@@ -181,7 +200,7 @@
 
                     <!-- Family Suite -->
                     <div class="room-card">
-                        <div class="room-image" style="background-image: url('assets/rooms/fam-room.webp')"></div>
+                        <div class="room-image" style="background-image: url('media/rp-12.jpg')"></div>
                         <div class="room-info">
                             <h3>Family Suite</h3>
                             <div class="room-features">
@@ -221,7 +240,7 @@
 
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="assets/spa/spa-1.webp" alt="Spa Services">
+                    <img src="media/show-1.jpg" alt="Spa Services">
                     <div class="service-overlay">
                         <h3>Luxury Spa</h3>
                         <p>Rejuvenate your body and mind with our premium spa treatments and wellness services.</p>
@@ -229,7 +248,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="assets/gym/gym-1.webp" alt="Fitness Center">
+                    <img src="media/show-2.jpg" alt="Fitness Center">
                     <div class="service-overlay">
                         <h3>Fitness Center</h3>
                         <p>State-of-the-art equipment and personal training services available 24/7.</p>
@@ -237,7 +256,7 @@
                 </div>
 
                 <div class="service-card">
-                    <img src="assets/business/business-1.webp" alt="Business Center">
+                    <img src="media/show-3.jpg" alt="Business Center">
                     <div class="service-overlay">
                         <h3>Business Center</h3>
                         <p>Fully equipped meeting rooms and conference facilities for all your business needs.</p>
@@ -245,7 +264,7 @@
                 </div>
 
                 <div class="service-card">
-                    <img src="assets/concierge/concierge-1.webp" alt="Concierge Service">
+                    <img src="media/show-4.jpg" alt="Concierge Service">
                     <div class="service-overlay">
                         <h3>Concierge Service</h3>
                         <p>Our dedicated concierge team ensures every detail of your stay is perfectly managed.</p>
@@ -364,7 +383,7 @@
     <!-- Virtual Tour Overlay -->
     <div class="virtual-tour-overlay" id="virtualTourOverlay">
         <div class="virtual-tour-container">
-            <img src="assets/rooms/room-1.webp" alt="Room Tour" class="tour-image" id="tourImage">
+            <img src="media/show-5.jpg" alt="Room Tour" class="tour-image" id="tourImage">
             <div class="tour-controls">
                 <button class="tour-prev" id="tourPrev">
                     <i class="fas fa-chevron-left"></i>
@@ -395,14 +414,15 @@
                     <div class="social-links">
                         <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://t.snapchat.com/spEiKUmt" target="_blank"><i class="fab fa-snapchat" style="color: #FFFC00;"></i></a>
+                        <a href="https://www.facebook.com/share/r/1C7mgf7an5/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin City, Nigeria</p>
-                    <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
-                    <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
+                    <p><i class="fas fa-phone"></i> &nbsp; 0706 782 6432</p>
+                    <p><i class="fab fa-whatsapp"></i> &nbsp; 09074056338</p>
                 </div>
                 <div class="footer-section">
                     <h3>Our Services</h3>

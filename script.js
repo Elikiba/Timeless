@@ -117,7 +117,7 @@ function initScrollToTop() {
         right: 30px;
         width: 50px;
         height: 50px;
-        background: var(--gold);
+        background: #f59e0b;
         border-radius: 50%;
         display: flex;
         align-items: center;
