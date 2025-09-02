@@ -378,12 +378,12 @@ function initVirtualTours() {
     if (!viewTourBtns.length || !tourOverlay) return;
     
     const images = [
-        'assets/rooms/room-1.webp',
-        'assets/rooms/room-2.webp',
-        'assets/rooms/room-3.webp',
-        'assets/rooms/room-4.webp',
-        'assets/rooms/room-5.webp',
-        'assets/rooms/fam-room.webp'
+        'media/room-4.webp',
+        'media/room-2.webp',
+        'media/room-3.webp',
+        'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg',
+        'media/room-4.webp',
+        'media/fam-room.webp'
     ];
     
     viewTourBtns.forEach(btn => {

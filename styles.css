@@ -15,6 +15,7 @@
         height: auto;
     }
 }
+
 :root {
     --gold: #FFDF00;
     --dark-gold: #B8860B;
@@ -362,7 +363,7 @@ header.scrolled .logo {
 }
 
 header.scrolled nav ul li a {
-    color: var(--light-gray);
+    color: var(--dark);
     font-weight: 600;
 }
 
@@ -1475,6 +1476,11 @@ footer {
 
     nav ul li {
         margin: 20px 0;
+    }
+
+    header.scrolled nav ul li a {
+    color: var(--light-gray);
+    font-weight: 600;
     }
 
     .hero-content h1 {
