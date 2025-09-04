@@ -595,7 +595,7 @@ nav ul li a.active::after {
 }
 
 .about-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     text-align: justify;
 }
@@ -664,7 +664,7 @@ nav ul li a.active::after {
 }
 
 .section-title h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--dark);
     margin-bottom: 20px;
     position: relative;
@@ -678,13 +678,13 @@ nav ul li a.active::after {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 120px;
     height: 3px;
     background: var(--gold);
 }
 
 .section-title p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--dark);
     opacity: 0.8;
     max-width: 600px;
