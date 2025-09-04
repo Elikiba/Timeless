@@ -804,7 +804,7 @@ nav ul li a.active::after {
     margin-bottom: 40px;
     color: var(--dark);
     opacity: 0.8;
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -1354,7 +1354,7 @@ nav ul li a.active::after {
 }
 
 .section-title p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     opacity: 0.8;
 }
 
