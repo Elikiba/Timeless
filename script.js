@@ -374,9 +374,9 @@ function initParallaxSlideshows() {
 function initVirtualTours() {
     const viewTourBtns = document.querySelectorAll('.view-tour-btn');
     const tourOverlay = document.querySelector('.virtual-tour-overlay');
-    
+
     if (!viewTourBtns.length || !tourOverlay) return;
-    
+
     const images = [
         'media/room-4.webp',
         'media/room-2.webp',
@@ -385,7 +385,7 @@ function initVirtualTours() {
         'media/room-4.webp',
         'media/fam-room.webp'
     ];
-    
+
     viewTourBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const tourContainer = tourOverlay.querySelector('.virtual-tour-container');
@@ -394,46 +394,52 @@ function initVirtualTours() {
             const nextBtn = tourContainer.querySelector('#tourNext');
             const progress = tourContainer.querySelector('#tourProgress');
             const closeBtn = tourContainer.querySelector('#closeTour');
-            
+
             let currentIndex = 0;
-            
+
             function updateTour() {
                 tourImage.src = images[currentIndex];
                 progress.textContent = `${currentIndex + 1}/${images.length}`;
             }
-            
+
             updateTour();
-            
-            prevBtn.addEventListener('click', () => {
+
+            function showPrev() {
                 currentIndex = (currentIndex - 1 + images.length) % images.length;
                 updateTour();
-            });
-            
-            nextBtn.addEventListener('click', () => {
+            }
+
+            function showNext() {
                 currentIndex = (currentIndex + 1) % images.length;
                 updateTour();
-            });
-            
+            }
+
+            prevBtn.addEventListener('click', showPrev);
+            nextBtn.addEventListener('click', showNext);
+
+            // Remove previous click handler if any, then add new one
+            tourImage.onclick = null;
+            tourImage.addEventListener('click', showNext);
+
             function handleKeyDown(e) {
                 if (e.key === 'ArrowLeft') {
-                    currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    updateTour();
+                    showPrev();
                 } else if (e.key === 'ArrowRight') {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    updateTour();
+                    showNext();
                 } else if (e.key === 'Escape') {
                     closeTour();
                 }
             }
-            
+
             function closeTour() {
                 tourOverlay.classList.remove('active');
                 document.body.style.overflow = '';
                 document.removeEventListener('keydown', handleKeyDown);
+                tourImage.removeEventListener('click', showNext);
             }
-            
+
             closeBtn.addEventListener('click', closeTour);
-            
+
             tourOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
             document.addEventListener('keydown', handleKeyDown);
