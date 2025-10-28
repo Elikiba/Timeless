@@ -18,16 +18,11 @@ function initAllFunctions() {
         initVirtualTours,
         initBookingForm,
         initSnapCarousel,
-        initDatePickers
+        initDatePickers,
+        initAnalytics // <--- add this
     ];
     
-    functions.forEach(fn => {
-        try {
-            fn();
-        } catch (e) {
-            console.error(`Error initializing ${fn.name}:`, e);
-        }
-    });
+    functions.forEach(fn => { if (typeof fn === 'function') try { fn(); } catch(e) { /* fail silently */ } });
 }
 
 // Mobile Menu Functionality
@@ -650,4 +645,80 @@ function initDatePickers() {
             });
         }
     }
+}
+
+/**
+ * initAnalytics
+ * - sends explicit page_view (if gtag ready)
+ * - listens for clicks on elements with data-ga-event and sends events
+ * - sends outbound/download link events for <a> clicks
+ */
+function initAnalytics() {
+    // explicit page_view for single-page setups; for normal pages gtag config already sent one
+    if (typeof gtag === 'function') {
+        try {
+            gtag('event', 'page_view', {
+                page_title: document.title,
+                page_path: location.pathname + location.search,
+                page_location: location.href
+            });
+        } catch (e) { /* ignore */ }
+    }
+
+    // Generic click tracking for elements with data-ga-event
+    document.body.addEventListener('click', function (e) {
+        const el = e.target.closest('[data-ga-event]');
+        if (!el) return;
+
+        const eventName = el.dataset.gaEvent || 'element_click';
+        const category = el.dataset.gaCategory || 'engagement';
+        const label = el.dataset.gaLabel || (el.getAttribute('href') || el.textContent || '').trim();
+        const value = el.dataset.gaValue ? Number(el.dataset.gaValue) : undefined;
+
+        if (typeof gtag === 'function') {
+            try {
+                const payload = {
+                    event_category: category,
+                    event_label: label
+                };
+                if (!isNaN(value)) payload.value = value;
+                gtag('event', eventName, payload);
+            } catch (err) { /* ignore */ }
+        }
+    }, false);
+
+    // Basic outbound & download link tracking for all <a> tags
+    document.body.addEventListener('click', function (e) {
+        const a = e.target.closest('a');
+        if (!a || !a.href) return;
+
+        const href = a.href;
+        const isExternal = href.indexOf(location.origin) !== 0;
+        const isMailto = href.startsWith('mailto:');
+        const isTel = href.startsWith('tel:');
+        const downloadExt = /\.(zip|pdf|docx?|xlsx?|csv|mp4|zip|rar)$/i;
+
+        let eventName = null;
+        let label = href;
+
+        if (isMailto) {
+            eventName = 'email_click';
+        } else if (isTel) {
+            eventName = 'phone_click';
+        } else if (isExternal) {
+            eventName = 'outbound_click';
+        } else if (downloadExt.test(href)) {
+            eventName = 'file_download';
+        }
+
+        if (eventName && typeof gtag === 'function') {
+            try {
+                gtag('event', eventName, {
+                    event_category: 'link',
+                    event_label: label,
+                    transport_type: 'beacon' // better reliability
+                });
+            } catch (err) {}
+        }
+    }, true);
 }

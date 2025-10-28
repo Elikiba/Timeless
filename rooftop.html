@@ -7,12 +7,25 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <!-- Google Analytics (GA4) - Measurement ID: G-BB02C4T0JR -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB02C4T0JR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-BB02C4T0JR', {
+        'anonymize_ip': true,   // optional: anonymize IPs
+        'send_page_view': true  // default true; keeps default page_view
+      });
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="media/logo-t.png" />
         
     <!-- SEO Title and Description -->
-    <title>Rooftop Bar | Timeless Luxury Benin City</title>
-    <meta name="description" content="Experience breathtaking city views at our rooftop bar in Benin City. Infinity pool, sky-high cocktails, and stunning sunset views await." />
+    <title>Rooftop Bar Benin City | Infinity Pool & City Views | Timeless Luxury</title>
+    <meta name="description" content="Stunning rooftop bar in Benin City with infinity pool, sky-high cocktails & panoramic city views. Perfect for sunset sessions & special events at Timeless Luxury." />
+    <meta name="keywords" content="rooftop bar Benin City, infinity pool Benin, sky bar Benin, city views Benin, sunset cocktails Benin, rooftop dining Benin" />
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -378,10 +391,17 @@
         </div>
     </section>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/2347067826432" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- WhatsApp Float Button (tracked) -->
+        <a href="https://wa.me/2347067826432"
+            class="whatsapp-float"
+            target="_blank"
+            rel="noopener"
+            data-ga-event="contact_click"
+            data-ga-category="contact"
+            data-ga-label="whatsapp_float"
+            >
+                <i class="fab fa-whatsapp"></i>
+        </a>
 
       <!-- Map Section -->
     <section class="map-section">

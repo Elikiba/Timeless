@@ -7,6 +7,18 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <!-- Google Analytics (GA4) - Measurement ID: G-BB02C4T0JR -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB02C4T0JR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-BB02C4T0JR', {
+        'anonymize_ip': true,   // optional: anonymize IPs
+        'send_page_view': true  // default true; keeps default page_view
+      });
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="media/logo-t.png" />
 
@@ -381,8 +393,15 @@
         </div>
     </section>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/2347067826432" class="whatsapp-float" target="_blank">
+    <!-- WhatsApp Float Button (tracked) -->
+    <a href="https://wa.me/2347067826432"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener"
+       data-ga-event="contact_click"
+       data-ga-category="contact"
+       data-ga-label="whatsapp_float"
+    >
         <i class="fab fa-whatsapp"></i>
     </a>
 
